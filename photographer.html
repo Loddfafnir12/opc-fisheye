@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+
+<head>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-      <script src="https://kit.fontawesome.com/1e38fcc92e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1e38fcc92e.js" crossorigin="anonymous"></script>
     <title>Fisheye - photographe </title>
-  </head>
+</head>
 
-    <body>
+<body>
 
     <div id="contact_modal" class="bground" tabindex="-1">
         <div class="modal" role="dialog" tabindex="0" aria-label="Formulaire de contact">
             <header class="modal-header">
                 <h2 tabindex="0">Contactez-moi</h2>
-                <img src="assets/icons/close.svg" alt="Croix de fermeture de modale" role="button" class="close_btn" tabindex="0" aria-label="Dialog Fermer le formulaire"/>
+                <img src="assets/icons/close.svg" alt="Croix de fermeture de modale" role="button" class="close_btn"
+                    tabindex="0" aria-label="Dialog Fermer le formulaire" />
             </header>
             <form>
 
                 <div class="formData">
                     <label for="first">Prénom</label>
-                    <input
-                            class="text-control input-text"
-                            type="text"
-                            id="first"
-                            name="first"
-                            aria-labelledby="first"
-                    />
+                    <input class="text-control input-text" type="text" id="first" name="first"
+                        aria-labelledby="first" />
                     <div id="error_icon-first" class="error-icon" aria-hidden="true">
                         <em class="fa-solid fa-triangle-exclamation"></em>
                     </div>
@@ -35,13 +32,7 @@
 
                 <div class="formData">
                     <label for="last">Nom</label>
-                    <input
-                            class="text-control input-text"
-                            type="text"
-                            id="last"
-                            name="last"
-                            aria-labelledby="last"
-                    />
+                    <input class="text-control input-text" type="text" id="last" name="last" aria-labelledby="last" />
                     <div id="error_icon-last" class="error-icon" aria-hidden="true">
                         <em class="fa-solid fa-triangle-exclamation"></em>
                     </div>
@@ -49,112 +40,108 @@
 
                 <div class="formData">
                     <label for="email">E-mail</label>
-                    <input
-                            class="text-control input-text"
-                            type="email"
-                            id="email"
-                            name="email"
-                            aria-labelledby="email"
-                            autocomplete="email"
-                    />
+                    <input class="text-control input-text" type="email" id="email" name="email" aria-labelledby="email"
+                        autocomplete="email" />
                     <div id="error_icon-email" class="error-icon" aria-hidden="true">
                         <em class="fa-solid fa-triangle-exclamation"></em>
-                    </div>              </div>
+                    </div>
+                </div>
 
                 <div class="formData">
                     <label for="message">Votre message</label>
-                    <textarea
-                            class="text-control"
-                            id="message"
-                            name="Votre message"
-                            aria-labelledby="message"
-                            placeholder="Votre message ici..."
-                    ></textarea>
+                    <textarea class="text-control" id="message" name="Votre message" aria-labelledby="message"
+                        placeholder="Votre message ici..."></textarea>
                 </div>
 
-                <button class="sending_button" type="submit" role="button" aria-label="Envoyer votre message">Envoyer</button>
+                <button class="sending_button" type="submit" role="button"
+                    aria-label="Envoyer votre message">Envoyer</button>
             </form>
         </div>
 
-        <div class="bgroung-over" role="dialog" tabindex="0" aria-label="Le message a été envoyé" >
+        <div class="bgroung-over" role="dialog" tabindex="0" aria-label="Le message a été envoyé">
             <h3>Merci pour votre message, vous recevrez une réponse très prochainement</h3>
             <button class="closing_button-over" role="button" aria-label="Fermer la modale">Fermer</button>
         </div>
     </div>
-    <div id="lightbox_bground" class="lightbox_bground" tabindex="-1" aria-label="Affichage des media dans une lightbox" role="dialog">
+    <div id="lightbox_bground" class="lightbox_bground" tabindex="-1" aria-label="Affichage des media dans une lightbox"
+        role="dialog">
         <div class="lightbox_content">
-            <em class="fa-solid fa-xmark close_btn-lightbox" role="button" aria-label="Fermer la light box" tabindex="0"></em>
+            <em class="fa-solid fa-xmark close_btn-lightbox" role="button" aria-label="Fermer la light box"
+                tabindex="0"></em>
 
-            <em class="fa-solid fa-chevron-left lightbox_left-button" role="button" aria-label="Naviguer vers l'image précédente" tabindex="0"></em>
+            <em class="fa-solid fa-chevron-left lightbox_left-button" role="button"
+                aria-label="Naviguer vers l'image précédente" tabindex="0"></em>
             <div class="lightbox_card">
                 <div class="lightbox_media" tabindex="0"></div>
                 <div class="lightbox_title" tabindex="0"></div>
             </div>
-            <em class="fa-solid fa-chevron-right lightbox_right-button" role="button" aria-label="Naviguer vers l'image suivante" tabindex="0"></em>
+            <em class="fa-solid fa-chevron-right lightbox_right-button" role="button"
+                aria-label="Naviguer vers l'image suivante" tabindex="0"></em>
         </div>
     </div>
 
 
     <header>
-            <a href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo de Fisheye lien vers page d'accueil"/></a>
-        </header>
+        <a href="index.html"><img src="assets/images/logo.png" class="logo"
+                alt="Logo de Fisheye lien vers page d'accueil" /></a>
+    </header>
 
-        <main id="main">
+    <main id="main">
 
-            <section class="photograph-header" aria-label="Fiche info Photographe">
-                <article>
-                    <button class="contact_button" aria-label="Me Contacter">Contactez-moi</button>
-                </article>
-            </section>
+        <section class="photograph-header" aria-label="Fiche info Photographe">
+            <article>
+                <button class="contact_button" aria-label="Me Contacter">Contactez-moi</button>
+            </article>
+        </section>
 
-            <section class="gallery" aria-label="Galerie de photos et videos">
+        <section class="gallery" aria-label="Galerie de photos et videos">
 
-                <div class="filters" role="region" aria-label="Filtres">
+            <div class="filters" role="region" aria-label="Filtres">
 
-                        <h2 class="trier" id="sort-label" tabindex="0">Trier par</h2>
+                <h2 class="trier" id="sort-label" tabindex="0">Trier par</h2>
 
-                        <div class="dropdown">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dropdown-icon">
-        <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
-    </svg>
-    <div class="selected" 
-         role="combobox" 
-         tabindex="0" 
-         aria-label="Trier par" 
-         aria-expanded="false" 
-         aria-controls="options"
-         aria-haspopup="listbox">
-    </div>
-    <ol id="options" class="dropdown-menu" role="listbox" aria-label="Options">
-        <li class="dropdown-divider" role="separator"></li>
-        <li class="dropdown-option" tabindex="0" role="option" id="filter-popularite" aria-label="Trier par popularité" data-order="1">Popularité</li>
-        <li class="dropdown-divider" role="separator"></li>
-        <li class="dropdown-option" tabindex="0" role="option" id="filter-date" aria-label="Trier par date" data-order="2">Date</li>
-        <li class="dropdown-divider" role="separator"></li>
-        <li class="dropdown-option" tabindex="0" role="option" id="filter-titre" aria-label="Trier par titre" data-order="3">Titre</li>
-    </ol>
-</div>
+                <div class="dropdown">
+                    <button class="selected" type="button" aria-label="Trier par" aria-expanded="false"
+                        aria-controls="options" aria-haspopup="listbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dropdown-icon">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </button>
+                    <ol id="options" class="dropdown-menu" role="listbox" aria-label="Options">
+                        <li class="dropdown-divider" role="separator"></li>
+                        <li class="dropdown-option" tabindex="0" role="option" id="filter-popularite"
+                            aria-label="Trier par popularité" data-order="1">Popularité</li>
+                        <li class="dropdown-divider" role="separator"></li>
+                        <li class="dropdown-option" tabindex="0" role="option" id="filter-date"
+                            aria-label="Trier par date" data-order="2">Date</li>
+                        <li class="dropdown-divider" role="separator"></li>
+                        <li class="dropdown-option" tabindex="0" role="option" id="filter-titre"
+                            aria-label="Trier par titre" data-order="3">Titre</li>
+                    </ol>
                 </div>
+            </div>
 
-                <div class="photo-grid" id="photo-grid" role="group" aria-label="Galerie de photos et videos">
-                    <!-- Photos will be dynamically added here -->
-                </div>
-            </section>
+            <div class="photo-grid" id="photo-grid" role="group" aria-label="Galerie de photos et videos">
+                <!-- Photos will be dynamically added here -->
+            </div>
+        </section>
 
-            <section class="priceandlikes">
-                <div class="like_counter">
-                    <em class="fa-solid fa-heart" aria-hidden="true"></em>
-                </div>
-                <div class="price">
-                </div>
-            </section>
-        </main>
+        <section class="priceandlikes">
+            <div class="like_counter">
+                <em class="fa-solid fa-heart" aria-hidden="true"></em>
+            </div>
+            <div class="price">
+            </div>
+        </section>
+    </main>
 
-        <script src="scripts/pages/photographer.js"></script>
-        <script src="scripts/templates/factory.js"></script>
-        <script src="scripts/utils/contactForm.js"></script>
-        <script src="scripts/utils/lightbox.js"></script>
-        <script src="scripts/templates/like.js"></script>
+    <script src="scripts/pages/photographer.js"></script>
+    <script src="scripts/templates/factory.js"></script>
+    <script src="scripts/utils/contactForm.js"></script>
+    <script src="scripts/utils/lightbox.js"></script>
+    <script src="scripts/templates/like.js"></script>
 
-    </body>
+</body>
+
 </html>
