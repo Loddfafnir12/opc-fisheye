@@ -319,7 +319,8 @@ class PhotographerPage {
          */
         openDropdown() {
             this.options.style.display = 'block';
-            this.dropdown.classList.add('open');
+            this.dropdown.setAttribute('aria-expanded', 'true');
+            this.dropdown.classList.add('open');    
             document.querySelector('.selected').classList.add('open');
             this.dropdownIcon.classList.remove('close-rotate');
             this.dropdownIcon.classList.add('open-rotate');
@@ -331,6 +332,7 @@ class PhotographerPage {
          */
         closeDropdown() {
             this.options.style.display = 'none';
+            this.dropdown.setAttribute('aria-expanded', 'false');
             this.dropdown.classList.remove('open');
             document.querySelector('.selected').classList.remove('open');
             this.dropdownIcon.classList.remove('open-rotate');
