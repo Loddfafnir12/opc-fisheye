@@ -118,6 +118,7 @@ class PhotographerPage {
             const imgContainer = document.createElement('div');
             imgContainer.className = 'img_container';
             imgContainer.setAttribute('tabindex', '0');
+            imgContainer.setAttribute('role', 'img');
             imgContainer.setAttribute('aria-label', `Portait du Photographe ${photographer.name}`);
 
             imgArticle.appendChild(imgContainer);
@@ -174,8 +175,9 @@ class PhotographerPage {
 
                 const likesDiv = document.createElement('div');
                 likesDiv.className = 'like_number';
-                likesDiv.setAttribute('id', `${media.title}`);
+                likesDiv.setAttribute('id', media.title.replace(/\s+/g, '-'));
                 likesDiv.setAttribute('aria-label', `Nombre de likes pour le media ${media.title} : ${media.likes}`);
+                likesDiv.setAttribute('role', 'status');
                 likesDiv.setAttribute('tabindex', '0');
                 textDiv.appendChild(likesDiv);
 
@@ -205,7 +207,8 @@ class PhotographerPage {
          * @param {Object} photographer - Les données du photographe.
          */
         renderPricePhotographer(photographer) {
-            const priceElement = document.createElement('p');
+            const priceElement = document.createElement('span');
+            priceElement.setAttribute('role', 'text');
             priceElement.textContent = `${photographer.price}€/jour`;
             priceElement.setAttribute('tabindex', '0');
             priceElement.setAttribute('aria-label', `${photographer.price} euros par jour`);
@@ -266,7 +269,7 @@ class PhotographerPage {
          * @description Bascule le menu déroulant.
          */
         handleLikeClick(event) {
-            const mediaTitle = event.currentTarget.id;
+            const mediaTitle = event.currentTarget.id.replace(/-/g, ' ');
 
             const media = this.media.find(media => media.title === mediaTitle);
 
