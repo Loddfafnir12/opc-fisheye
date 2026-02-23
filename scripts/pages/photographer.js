@@ -13,7 +13,7 @@ class PhotographerPage {
     constructor(id, name, city, country, tags, tagline, price, portrait, date) {
             this.dropdown = document.querySelector('.dropdown');
             this.options = document.querySelector('.dropdown-menu');
-            this.dropdownButton = document.querySelector('.dropdown');
+            this.dropdownButton = document.querySelector('.selected');
             this.dropdownIcon = document.querySelector('.dropdown-icon');
             this.dropdownOptions = document.querySelectorAll('.dropdown-option');
             this.selectedOption = document.querySelector('#filter-popularite');
@@ -319,11 +319,12 @@ class PhotographerPage {
          */
         openDropdown() {
             this.options.style.display = 'block';
-            this.dropdown.setAttribute('aria-expanded', 'true');
-            this.dropdown.classList.add('open');    
-            document.querySelector('.selected').classList.add('open');
+            this.dropdown.classList.add('open');
+            const selected = document.querySelector('.selected');
+            selected.setAttribute('aria-expanded', 'true');
+            selected.classList.add('open');
             this.dropdownIcon.classList.remove('close-rotate');
-            this.dropdownIcon.classList.add('open-rotate');
+           this.dropdownIcon.classList.add('open-rotate');
         }
 
         /**
@@ -331,13 +332,14 @@ class PhotographerPage {
          * @description Ferme le menu déroulant.
          */
         closeDropdown() {
-            this.options.style.display = 'none';
-            this.dropdown.setAttribute('aria-expanded', 'false');
-            this.dropdown.classList.remove('open');
-            document.querySelector('.selected').classList.remove('open');
-            this.dropdownIcon.classList.remove('open-rotate');
-            this.dropdownIcon.classList.add('close-rotate');
-        }
+    this.options.style.display = 'none';
+    this.dropdown.classList.remove('open');
+    const selected = document.querySelector('.selected');
+    selected.setAttribute('aria-expanded', 'false');
+    selected.classList.remove('open');
+    this.dropdownIcon.classList.remove('open-rotate');
+    this.dropdownIcon.classList.add('close-rotate');
+}
 
         /**
          * @method selectOption
