@@ -8,6 +8,7 @@ const modalBtn = document.querySelector(".contact_button");
 const closebtn = document.querySelector(".close_btn");
 const closeOver = document.querySelector(".closing_button-over");
 const body = document.body;
+const lightbox = document.querySelector('.lightbox');
 
 //      Fonctions De gestion des évènements
 
@@ -155,7 +156,7 @@ function validateLastName(nom) {
 }
 
 function validateEmail(email) {
-    let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(email)) {
         throw new Error("Merci de saisir une adresse email valide. ");
     } else {

@@ -1,0 +1,26 @@
+{
+  "name": "opc-fisheye",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint scripts/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loddfafnir12/opc-fisheye.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Loddfafnir12/opc-fisheye/issues"
+  },
+  "homepage": "https://github.com/Loddfafnir12/opc-fisheye#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0"
+  }
+}

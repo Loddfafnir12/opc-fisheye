@@ -61,15 +61,17 @@ function handleKeydown(event) {
             closeLightbox();
             break;
         case ' ':
-            // If the current media is a video, play or pause it
-            const media = lightboxMedia.querySelector('video');
-            if (media) {
-                if (media.paused) {
-                    media.play();
-                } else {
-                    media.pause();
+            {
+                // If the current media is a video, play or pause it
+                const media = lightboxMedia.querySelector('video');
+                if (media) {
+                    if (media.paused) {
+                        media.play();
+                    } else {
+                        media.pause();
+                    }
+                    event.preventDefault(); // Prevent the default action (scrolling)
                 }
-                event.preventDefault(); // Prevent the default action (scrolling)
             }
             break;
     }

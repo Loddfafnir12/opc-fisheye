@@ -129,3 +129,5 @@ class Video extends Media {
 }
 
 }
+
+export { MediaFactory };

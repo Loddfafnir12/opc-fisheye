@@ -1,5 +1,7 @@
 // noinspection JSValidateTypes
 
+import { MediaFactory } from '../templates/factory.js';
+
 /**
      * @class PhotographerPage
      * @description Représente une page pour un photographe spécifique.
