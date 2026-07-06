@@ -70,7 +70,7 @@ class Photo extends Media {
      */
     createElement() {
         const imgElement = document.createElement('img');
-        imgElement.src = `assets/images/${this.image}`;
+        imgElement.src = `assets/images/media/${this.image}`;
         imgElement.alt = this.title;
         imgElement.tabIndex = 0;
         return imgElement;
@@ -103,7 +103,7 @@ class Video extends Media {
      */
     createElement() {
     const vidElement = document.createElement('video');
-    vidElement.src = `assets/images/${this.video}`;
+    vidElement.src = `assets/images/media/${this.video}`;
     vidElement.controls = true;
     vidElement.tabIndex = 0;
     vidElement.setAttribute('aria-label', `Vidéo : ${this.title}, de ${this.owner}`);
