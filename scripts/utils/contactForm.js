@@ -28,6 +28,15 @@ closebtn.addEventListener("click", function() {
     body.removeAttribute('aria-hidden');
 });
 
+//Ajout de la fonctionnalité de fermeture de la modale avec la touche Echap suite a l'oublie de celle-ci dans le code
+closebtn.addEventListener("keydown", function(event) {
+    if (event.key === 'Escape'){
+        closeModal();
+        removeAllErrorMessages();
+        body.removeAttribute('aria-hidden');
+    }
+});
+
 closeOver.addEventListener("click", function() {
     closeModal();
     removeAllErrorMessages();
