@@ -57,7 +57,7 @@ closebtn.addEventListener("keydown", function(event) {
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
-        if (lightbox.style.display !== 'block') {
+        if (!lightbox || lightbox.style.display !== 'block') {
             closeModal();
             removeAllErrorMessages();
             body.removeAttribute('aria-hidden');
