@@ -8,7 +8,7 @@ const modalBtn = document.querySelector(".contact_button");
 const closebtn = document.querySelector(".close_btn");
 const closeOver = document.querySelector(".closing_button-over");
 const body = document.body;
-const lightbox = document.querySelector('.lightbox_background');//changement de lightbox vers lightbox_background
+const lightbox = document.querySelector('.lightbox_bground');//changement de lightbox vers lightbox_background --> bground pas background
 
 //      Fonctions De gestion des évènements
 
